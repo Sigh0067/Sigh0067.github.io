@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title> Javacript Practice </title>
+
+  <script type="text/javascript">
+    // Declasre a variable
+    var x = 3;
+    //Declares a function
+    function generateFunny() {
+      var funnyPhrases = [
+        "Knock Knock...no ones there",
+        "Smiley face",
+        "Pick it up pack it up",
+        "Bad boys do it better ;p",
+        "Something clever",
+        "poppy"
+      ];
+      var funnyWords = document.getElementById('funnyWords')
+      funnyWords.innerHTML = funnyPhrases[rollDie() -1 ];
+
+    }
+    //return a random number between 1 and 6
+    function rollDie() {
+      var newNumber = Math.random()
+      newNumber = newNumber * 6
+      newNumber = Math.ceil(newNumber)
+      return newNumber
+    }
+    // Put a random number in the dieBox
+    function getDieRoll() {
+      var dieBox =  document.getElementById('dieBox');
+      dieBox.innerHTML = rollDie();
+    }
+
+    // Test using lists ctrl+? makes it code and undo's
+    // var itemList = ["Diamond Sword", "Diamond Pickaxe", "Apple", "Magenta Wool"];
+    // console.log(itemList[0]);
+    // console.log(itemList[1]);
+    // console.log(itemList[2]);
+    // console.log(itemList[3]);
+    // console.log(itemList[x]);
+    //The code above it called "zombie code"
+    //it's code saved for later that we don not use
+  </script>
+</head>
+
+<body>
+  <h1>Welcome!</h1>
+  <h2 id="funnyWords" onclick="generateFunny()">Funny thing here</h2>
+  <div id="dieBox" onclick="getDieRoll()">
+    click to roll the die...
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Position</title>
+  <style media="screen">
+    * {
+    line-height: 30;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    }
+
+    * {
+      font-family: Arial;
+      font-weight: bold;
+      font-size: large;
+    }
+
+    body {
+      height: 100%;
+    }
+
+    .thumbsBox {
+      width: 50%;
+      height: 50%;
+      border: solid;
+    }
+
+    .pTop {
+      position: absolute;
+      top: 0px;
+    }
+
+    .pBot {
+      position: absolute;
+      bottom: 0px;
+    }
+
+    .pLeft {
+      position: absolute;
+      left: 0px;
+    }
+
+    .pRight {
+      position: absolute;
+      right: 0px;
+    }
+
+    #tUp {
+      background-color: #75FE27;
+    }
+    #tUp:hover{
+      background-color: #C5F889;
+    }
+
+    #tWiggle {
+      background-color: #27FEDD;
+    }
+    #tWiggle:hover{
+      background-color: #92F9E9;
+    }
+
+    #tDown {
+      background-color: #E72121;
+    }
+    #tDown:hover{
+      background-color: #E84E4E;
+    }
+
+    #tOops {
+      background-color: #F9E91E;
+    }
+    #tOops:hover {
+      background-color: #F9F29C;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="tUp" class="thumbsBox pTop pLeft">
+<a href="http://192.168.10.69:420/tutd?thumbs=up">Up</a>
+  </div>
+  <div id="tWiggle" class="thumbsBox pTop pRight">
+<a href="http://192.168.10.69:420/tutd?thumbs=up">Wiggle</a>
+  </div>
+  <div id="tDown" class="thumbsBox pBot pLeft">
+<a href="http://192.168.10.69:420/tutd?thumbs=up">Down</a>
+  </div>
+  <div id="tOops" class="thumbsBox pBot pRight">
+<a href="http://192.168.10.69:420/tutd?thumbs=up">Oops</a>
+  </div>
+</body>
+
+</html>
