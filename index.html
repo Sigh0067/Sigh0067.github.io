@@ -3,46 +3,51 @@
 
 <head>
   <meta charset="utf-8">
-  <title>My Punkpage</title>
-  <link rel="stylesheet" href="CSS/style.css">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Final project</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/functions.js" charset="utf-8"></script>
 </head>
 
 <body>
-  <div id="content">
+  <div id="Content">
+    <div id="HeaderBox">
+      <h1> Rhythm game: Friday Night Funkin' </h1>
 
-    <div id="headerBox">
-      <h1>The Punk stuff</h1>
-      <p>This will have a bunch of punk things that I like.</p>
-      <a href="about.html">More about this website </a>
     </div>
 
-    <div id="navBox">
-      <div class="links">
-        home
+    <div id="MenuBox">
+      <div class="linkBox">
+        <p>
+          <a href="index.html">Home</a>
+        </p>
       </div>
 
-      <div class="links">
-        <a href="about.html">About</a>
+      <div class="linkBox">
+        <p>
+          <a href="www/index.html">Game</a>
+        </p>
       </div>
 
-      <div class="links">
-        Get2School3
+      <div class="linkBox">
+
+        <p id="scriptJ" style="display:none"> <a href="About.html">About</a> </p>
+        <p <button type="button" id="showButton" onclick="document.getElementById('scriptJ').style.display='block';
+        document.getElementById('showButton').style.display='none';">click me!</button>
+        </p>
       </div>
-    </div>
-    <div class="paraBox">
-      <h2>
-      <a href="www/index.html">play my game</p>
-	  </h2>
+
     </div>
 
-    <div class="paraBox">
-      <h2 class="h2">Art</h2>
-      <p>Punk art that I like.</p>
-      <div> <img src="punk.webp" alt="">
-        <br><a href="./other/hidden.html"><img src='punkPic.webp' alt=""></a>
-      </div>
+    <div class="blogBox">
+      <img src="img/fridayNight.png" alt="">
+      <p> I like the art and abviously the music. The mod that I like the most is by <strong> Valentine Hard </strong> </p>
+
+      <p> In the menu bar, you can see the about and game options.
+        if you click on the game box you'll be able to play the game i've been working on all school year.</p>
     </div>
+
+  </div>
 </body>
 
 </html>
